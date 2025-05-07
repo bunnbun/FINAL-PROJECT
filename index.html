@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delightful Bakes | Freshly Baked Goods</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delightful Bakes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center text-white py-5">
+        <div class="container">
+            <h1 class="display-4">Delightful Bakes</h1>
+            <p class="lead">Freshly baked goods, made with love. Cakes, pastries, cupcakes, and more!</p>
+            <a href="#menu" class="btn btn-light btn-lg mt-4">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-4">Our Story</h2>
+            <p class="lead text-center">
+                At Delightful Bakes, we bake with passion and love. Our bakery has been part of the community for over a decade, providing high-quality, fresh treats for all occasions. From birthday cakes to wedding cupcakes, we cater to all your sweet cravings.
+            </p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu bg-light py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Our Menu</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="cake1.jpg" class="card-img-top" alt="Chocolate Cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">Rich chocolate cake layered with a smooth ganache filling. Perfect for any occasion!</p>
+                            <button class="btn btn-dark">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="cupcake1.jpg" class="card-img-top" alt="Vanilla Cupcakes">
+                        <div class="card-body">
+                            <h5 class="card-title">Vanilla Cupcakes</h5>
+                            <p class="card-text">Light, fluffy cupcakes topped with creamy vanilla buttercream.</p>
+                            <button class="btn btn-dark">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="cinnamonroll.jpg" class="card-img-top" alt="Cinnamon Rolls">
+                        <div class="card-body">
+                            <h5 class="card-title">Cinnamon Rolls</h5>
+                            <p class="card-text">Soft, warm rolls filled with cinnamon and topped with glaze.</p>
+                            <button class="btn btn-dark">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">What Our Customers Say</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="lead text-center">"Delightful Bakes has the best chocolate cake I've ever had!" - Emily R.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead text-center">"The vanilla cupcakes are amazing! Light and fluffy." - John D.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="lead text-center">"Their cinnamon rolls are to die for!" - Sarah M.</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Get In Touch</h2>
+            <form action="submit.php" method="POST">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark btn-lg btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 Delightful Bakes. All Rights Reserved.</p>
+            <div>
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
