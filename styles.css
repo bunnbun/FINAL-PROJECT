@@ -1,0 +1,79 @@
+/* Reset some default styling */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styles */
+body {
+    padding-top: 70px; /* To account for the navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* About Us Section */
+.about {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+/* Menu Section */
+.menu {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #343a40;
+    padding: 60px 0;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Button styling */
+.btn-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #555;
+}
